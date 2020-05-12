@@ -1,4 +1,4 @@
-# cms-react-boilerplate
+# cms-react-boilerplate [beta]
 Boilerplate react project for creating apps using HubSpot CMS templates
 
 ## Getting Started
