@@ -1,0 +1,32 @@
+.cms-react-boilerplate__container {
+  text-align: center;
+  header {
+    background-color: #282c34;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  .logo-container {
+    flex-direction: row;
+    img {
+      animation: cms-react-boilerplate__logo--spin infinite 20s linear;
+      height: 40vmin;
+      &:last-child {
+        animation-direction: reverse;
+      }
+    }
+  }
+}
+
+@keyframes cms-react-boilerplate__logo--spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
