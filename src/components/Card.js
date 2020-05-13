@@ -15,10 +15,7 @@ function Card() {
             : 'are so many reasons'
         } to use HubSpot CMS + React!`}
       </p>
-      <button
-        className="btn"
-        onClick={() => setClickCount(clickCount + 1)}
-      >
+      <button className="btn" onClick={() => setClickCount(clickCount + 1)}>
         Click me!
       </button>
     </div>
