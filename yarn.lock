@@ -829,10 +829,10 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@hubspot/api-auth-lib@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@hubspot/api-auth-lib/-/api-auth-lib-1.1.1.tgz#1ac6c8a0a58817711bc29d25f584bbcf2e3cc761"
-  integrity sha512-PiFnQtcSvIa5Kv6EOGxJn/WC7gxD88Wl70UuV1vseKUKy4xXUuNZS1Xn/xvXUAC9648bwZuaK8P3o8PMR2oHHg==
+"@hubspot/api-auth-lib@^1.1.3-beta.0":
+  version "1.1.3-beta.0"
+  resolved "https://registry.yarnpkg.com/@hubspot/api-auth-lib/-/api-auth-lib-1.1.3-beta.0.tgz#ac573f891e864d9f14c26f5198f3dad18d7b4e4e"
+  integrity sha512-T0mgYImSIvd7hcgPY/nrYUIIRSord4OBFMTSijwQbgDw7I3OJE7GtibFUf1IwDYPRmy0oocWpOwDz7CSb1rWkg==
   dependencies:
     express "^4.16.3"
     moment "^2.24.0"
@@ -840,13 +840,13 @@
     request "^2.88.0"
     request-promise-native "^1.0.7"
 
-"@hubspot/cms-cli@1.1.2":
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@hubspot/cms-cli/-/cms-cli-1.1.2.tgz#c0af875f7b9d837c45135182596398d7c386cc9e"
-  integrity sha512-8Jsqh80x7n6q8EG9+FFZDY82zPf00ITamvWMdk3SYa5H29H0A+mhaKiZlPIH58D9jiMQZakrMIsPUbVkV9lgXw==
+"@hubspot/cms-cli@^1.1.4":
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/@hubspot/cms-cli/-/cms-cli-1.1.5.tgz#40bf8cf4044a954e7bbaf7bb15fc158b0ecb7d7e"
+  integrity sha512-qulZwGg0qBP7Vw5ihl78YszrGox0KmUAe2uXtFhIET0aDAa1nkNKx9askEVq4OlZMJYVmbHF6hgFJUV2HxClOQ==
   dependencies:
-    "@hubspot/api-auth-lib" "^1.1.1"
-    "@hubspot/cms-lib" "^1.1.2"
+    "@hubspot/api-auth-lib" "^1.1.3-beta.0"
+    "@hubspot/cms-lib" "^1.1.4"
     commander "^2.16.0"
     inquirer "^6.3.1"
     ora "^4.0.3"
@@ -854,10 +854,10 @@
     shelljs "0.8.3"
     update-notifier "3.0.1"
 
-"@hubspot/cms-lib@^1.1.2":
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@hubspot/cms-lib/-/cms-lib-1.1.2.tgz#315e7d4f88f0c34ca4550339f424ece5abebbc4e"
-  integrity sha512-16DD9gK585lhH65fcR4CDj0QB/eDETOZHuKIDvNvGLB0dET/NuMbsV+wtjJsUs8rraXe1M9zbunXkMmyvkGNcQ==
+"@hubspot/cms-lib@^1.1.4":
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/@hubspot/cms-lib/-/cms-lib-1.1.4.tgz#2bd6323edb0632b3d06851ddb9484128ffbcbc6c"
+  integrity sha512-dFGuuyQyQV/sQ6uKAu6mf6wiAdc3ZpXQnEyB0sCSpahUFVDUAm6drq6pY7H5TB6I4ObTvXEt4ioMkm8Pt8ZQNQ==
   dependencies:
     chalk "^2.4.2"
     chokidar "^3.0.1"
@@ -876,11 +876,11 @@
     unixify "1.0.0"
 
 "@hubspot/webpack-cms-plugins@^1.0.0":
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@hubspot/webpack-cms-plugins/-/webpack-cms-plugins-1.1.2.tgz#5b176b591eea8b1172340b259b405bc9933c3e85"
-  integrity sha512-MVQ1BhcqGjg5MNjzeKYVhbxO3FDHjN9MWv1jxeHWiulz7j9eEQNOaBzlOaJdN72u0YzBMQcVwPOns5jYZ9sB8Q==
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/@hubspot/webpack-cms-plugins/-/webpack-cms-plugins-1.1.4.tgz#3765f5feef32e3850286e8502ff18c451f79b8e1"
+  integrity sha512-zifLQVtLBfQpEtTsPlFQ7H7Wr5lWP3Z7D4ZmQclj1yNxztmaNcO3W9qBDbJctVIgI3FMS/L+6Gfk1xR+4b4x2Q==
   dependencies:
-    "@hubspot/cms-lib" "^1.1.2"
+    "@hubspot/cms-lib" "^1.1.4"
 
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
@@ -2410,9 +2410,9 @@ ee-first@1.1.1:
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
 electron-to-chromium@^1.3.413:
-  version "1.3.434"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.434.tgz#a67dcb268e93768e2169399999ccffa4783f048e"
-  integrity sha512-WjzGrE6appXvMyc2kH9Ide7OxsgTuRzag9sjQ5AcbOnbS9ut7P1HzOeEbJFLhr81IR7n2Hlr6qTTSGTXLIX5Pg==
+  version "1.3.436"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.436.tgz#d50715d8c2a75c9a3d2e77a1c3a28072580aaba2"
+  integrity sha512-qE378nzCj/E680nApDh8ctJ3gY8k58xIRCBbQC9S6i3OCRlwnTzTBVGXWDh37RZYgIYyFR0n6X14xlND1EkezQ==
 
 elliptic@^6.0.0, elliptic@^6.5.2:
   version "6.5.2"
@@ -2567,9 +2567,9 @@ eslint-plugin-react-hooks@^2.1.2:
   integrity sha512-Y2c4b55R+6ZzwtTppKwSmK/Kar8AdLiC2f9NADCuxbcTgPPg41Gyqa6b9GppgXSvCtkRw43ZE86CT5sejKC6/g==
 
 eslint-plugin-react@^7.16.0:
-  version "7.19.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.19.0.tgz#6d08f9673628aa69c5559d33489e855d83551666"
-  integrity sha512-SPT8j72CGuAP+JFbT0sJHOB80TX/pu44gQ4vXH/cq+hQTiY2PuZ6IHkqXJV6x1b28GDdo1lbInjKUrrdUf0LOQ==
+  version "7.20.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.20.0.tgz#f98712f0a5e57dfd3e5542ef0604b8739cd47be3"
+  integrity sha512-rqe1abd0vxMjmbPngo4NaYxTcR3Y4Hrmc/jg4T+sYz63yqlmJRknpEQfmWY+eDWPuMmix6iUIK+mv0zExjeLgA==
   dependencies:
     array-includes "^3.1.1"
     doctrine "^2.1.0"
@@ -2580,7 +2580,6 @@ eslint-plugin-react@^7.16.0:
     object.values "^1.1.1"
     prop-types "^15.7.2"
     resolve "^1.15.1"
-    semver "^6.3.0"
     string.prototype.matchall "^4.0.2"
     xregexp "^4.3.0"
 
@@ -6146,9 +6145,9 @@ spdx-exceptions@^2.1.0:
   integrity sha512-/tTrYOC7PPI1nUAgx34hUpqXuyJG+DTHJTnIULG4rDygi4xu/tfgmq1e1cIRwRzwZgo4NLySi+ricLkZkw4i5A==
 
 spdx-expression-parse@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/spdx-expression-parse/-/spdx-expression-parse-3.0.0.tgz#99e119b7a5da00e05491c9fa338b7904823b41d0"
-  integrity sha512-Yg6D3XpRD4kkOmTpdgbUiEJFKghJH03fiC1OPll5h/0sO6neh2jqRDVHOQ4o/LMea0tgCkbMgea5ip/e+MkWyg==
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/spdx-expression-parse/-/spdx-expression-parse-3.0.1.tgz#cf70f50482eefdc98e3ce0a6833e4a53ceeba679"
+  integrity sha512-cbqHunsQWnJNE6KhVSMsMeH5H/L9EpymbzqTQ3uLwNCLZ1Q481oWaofqH7nO6V07xlXwY6PhQdQ2IedWx/ZK4Q==
   dependencies:
     spdx-exceptions "^2.1.0"
     spdx-license-ids "^3.0.0"
@@ -6605,9 +6604,9 @@ trim-newlines@^1.0.0:
     glob "^7.1.2"
 
 tslib@^1.9.0:
-  version "1.11.2"
-  resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.11.2.tgz#9c79d83272c9a7aaf166f73915c9667ecdde3cc9"
-  integrity sha512-tTSkux6IGPnUGUd1XAZHcpu85MOkIl5zX49pO+jfsie3eP0B6pyhOlLXm3cAC6T7s+euSDDUUV+Acop5WmtkVg==
+  version "1.12.0"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.12.0.tgz#d1fc9cacd06a1456c62f2902b361573e83d66473"
+  integrity sha512-5rxCQkP0kytf4H1T4xz1imjxaUUPMvc5aWp0rJ/VMIN7ClRiH1FwFvBt8wOeMasp/epeUnmSW6CixSIePtiLqA==
 
 tty-browserify@0.0.0:
   version "0.0.0"
