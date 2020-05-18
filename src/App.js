@@ -6,7 +6,10 @@ import Card from './components/Card';
 
 function App({ moduleData }) {
   // eslint-disable-next-line no-console
-  console.log('all of your data typically accessed via {{ module }} in HubL is available as JSON here!', moduleData);
+  console.log(
+    'all of your data typically accessed via {{ module }} in HubL is available as JSON here!',
+    moduleData,
+  );
   return (
     <div className="cms-react-boilerplate__container">
       <header>
