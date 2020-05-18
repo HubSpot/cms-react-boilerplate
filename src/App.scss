@@ -16,6 +16,11 @@
       height: 300px;
       &:last-child {
         animation-direction: reverse;
+        &.sprocket-logo {
+          transform-origin: 64.8% 55.4%;
+          left: -130px;
+          position: relative;
+        }
       }
     }
   }
