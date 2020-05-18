@@ -1,6 +1,6 @@
 {%- set instance_id = name %}
 
-{%- require_js -%}
+{%- require_js position="head" -%}
   <script type="application/json"
     data-module-instance="{{ instance_id }}">
     {{ module|tojson }}
@@ -10,7 +10,7 @@
 {{ require_css(get_asset_url('../../cms-react-boilerplate.css')) }}
 {{ require_js(get_asset_url('../../cms-react-boilerplate.js'), 'footer') }}
 
-<div id="cms-react-boilerplate__App"
+<div id="cms-react-boilerplate__App--{{ instance_id }}"
   class="cms-react-boilerplate"
   data-portal-id="{{ portal_id }}"
   data-module-instance="{{ instance_id }}">
