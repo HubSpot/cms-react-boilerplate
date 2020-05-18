@@ -4,7 +4,9 @@ import logo from './images/logo.svg';
 import sprocket from './images/sprocket.svg';
 import Card from './components/Card';
 
-function App({moduleData}) {
+function App({ moduleData }) {
+  // eslint-disable-next-line no-console
+  console.log('all of your data typically accessed via {{ module }} in HubL is available as JSON here!', moduleData);
   return (
     <div className="cms-react-boilerplate__container">
       <header>
