@@ -1,0 +1,17 @@
+{%- set instance_id = name %}
+
+{%- require_js -%}
+  <script type="application/json"
+    data-module-instance="{{ instance_id }}">
+    {{ module|tojson }}
+  </script>
+{%- end_require_js -%}
+
+{{ require_css(get_asset_url('../../cms-react-boilerplate.css')) }}
+{{ require_js(get_asset_url('../../cms-react-boilerplate.js'), 'footer') }}
+
+<div id="cms-react-boilerplate__App"
+  class="cms-react-boilerplate"
+  data-portal-id="{{ portal_id }}"
+  data-module-instance="{{ instance_id }}">
+</div>

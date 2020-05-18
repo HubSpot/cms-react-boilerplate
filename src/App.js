@@ -4,7 +4,7 @@ import logo from './images/logo.svg';
 import sprocket from './images/sprocket.svg';
 import Card from './components/Card';
 
-function App() {
+function App({moduleData}) {
   return (
     <div className="cms-react-boilerplate__container">
       <header>
@@ -15,7 +15,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <Card />
+        <Card hydratedClickCount={moduleData.initial_count} />
       </header>
     </div>
   );

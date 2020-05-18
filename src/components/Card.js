@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import './Card.scss';
 
-function Card() {
-  const [clickCount, setClickCount] = useState(0);
+function Card ({ hydratedClickCount }) {
+  console.log(hydratedClickCount);
+  const [clickCount, setClickCount] = useState(hydratedClickCount);
   const pluralize = (n, noun, suffix) =>
     `${n !== 1 ? 'are' : 'is'} ${n} ${noun + (n !== 1 ? suffix : '')}`;
 
