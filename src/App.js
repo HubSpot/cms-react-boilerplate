@@ -7,7 +7,7 @@ import Card from './components/Card';
 function App({ moduleData }) {
   // eslint-disable-next-line no-console
   console.log(
-    'all of your data typically accessed via {{ module }} in HubL is available as JSON here!',
+    'all of your data typically accessed via the "module" keyword in HubL is available as JSON here!',
     moduleData,
   );
   return (
@@ -20,7 +20,7 @@ function App({ moduleData }) {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <Card hydratedClickCount={moduleData.initial_count} />
+        <Card initialClickCount={moduleData.initial_count} />
       </header>
     </div>
   );
