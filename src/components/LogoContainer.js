@@ -1,6 +1,7 @@
 import React from 'react';
-import logo from './images/logo.svg';
-import sprocket from './images/sprocket.svg';
+import logo from '../images/logo.svg';
+import sprocket from '../images/sprocket.svg';
+import './LogoContainer.scss';
 
 function LogoContainer() {
   return (
