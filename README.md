@@ -1,5 +1,5 @@
 # cms-react-boilerplate [beta]
-Boilerplate react project for creating apps using HubSpot CMS templates
+Boilerplate [React](https://reactjs.org/) project for creating apps using modules on the HubSpot CMS
 
 ## Getting Started
 
@@ -16,7 +16,7 @@ For more information on local development tools, see [Local Development Tooling:
 
 ### Running
 - Run `npm start` or `yarn start` to automatically upload your project to `defaultPortal`.
-- Preview the or create a page using `app.html` template
+- Create a page from default theme, or any drag-and-drop (`dnd_area`) enabled template in your portal, and add the `app (label: React app boilerplate)` module.
 
 ### package.json scripts
 - `start` : Builds project with webpack, uploads to your `defaultPortal` specified in `hubspot.config.yml` and watches for changes via [`@hubspot/webpack-cms-plugins/HubSpotAutoUploadPlugin`](https://www.npmjs.com/package/@hubspot/webpack-cms-plugins).

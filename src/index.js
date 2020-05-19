@@ -6,9 +6,21 @@ import './index.scss';
 import App from './App';
 import ErrorBoundary from './components/ErrorBoundary';
 
-ReactDOM.render(
-  <ErrorBoundary>
-    <App />
-  </ErrorBoundary>,
-  document.getElementById('cms-react-boilerplate__App'),
+const targetModulesData = document.querySelectorAll(
+  '.cms-react-boilerplate > script[type="application/json"]',
 );
+targetModulesData.forEach(({ dataset, textContent }) => {
+  const root = document.getElementById(
+    `cms-react-boilerplate__App--${dataset.moduleInstance}`,
+  );
+  return ReactDOM.render(
+    <ErrorBoundary>
+      <App
+        portalId={dataset.portalId}
+        moduleData={JSON.parse(textContent)}
+        moduleInstance={dataset.moduleInstance}
+      />
+    </ErrorBoundary>,
+    root,
+  );
+});
