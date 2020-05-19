@@ -1,17 +1,13 @@
-{%- set instance_id = name %}
-
-{%- require_js position="head" -%}
-  <script type="application/json"
-    data-module-instance="{{ instance_id }}">
-    {{ module|tojson }}
-  </script>
-{%- end_require_js -%}
-
 {{ require_css(get_asset_url('../../cms-react-boilerplate.css')) }}
 {{ require_js(get_asset_url('../../cms-react-boilerplate.js'), 'footer') }}
+{%- set instance_id = name %}
 
-<div id="cms-react-boilerplate__App--{{ instance_id }}"
-  class="cms-react-boilerplate"
-  data-portal-id="{{ portal_id }}"
-  data-module-instance="{{ instance_id }}">
+<div class="cms-react-boilerplate">
+  <script type="application/json"
+    data-module-instance="{{ instance_id }}"
+    data-portal-id="{{ portalId }}">
+      {{ module|tojson }}
+  </script>
+
+  <div id="cms-react-boilerplate__App--{{ instance_id }}"></div>
 </div>
