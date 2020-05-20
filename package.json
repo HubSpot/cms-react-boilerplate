@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --watch --env.autoupload --mode development",
+    "start": "webpack --watch --env.autoupload --mode production",
     "build": "rm -Rf dist && webpack --mode production",
     "deploy": "m -Rf dist && webpack --mode production && hs upload dist cms-react-boilerplate",
     "lint": "eslint src && prettier --list-different 'src/**/*.js' 'src/**/*.json'",
@@ -41,7 +41,8 @@
   "dependencies": {
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "regenerator-runtime": "^0.13.3"
+    "regenerator-runtime": "^0.13.3",
+    "request": "^2.88.0"
   },
   "browserslist": {
     "production": [
