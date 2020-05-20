@@ -19,9 +19,9 @@ For more information on local development tools, see [Local Development Tooling:
 - Create a page from default theme, or any drag-and-drop (`dnd_area`) enabled template in your portal, and add the `app (label: React app boilerplate)` module.
 
 ### package.json scripts
-- `start` : Builds project with webpack, uploads to your `defaultPortal` specified in `hubspot.config.yml` and watches for changes via [`@hubspot/webpack-cms-plugins/HubSpotAutoUploadPlugin`](https://www.npmjs.com/package/@hubspot/webpack-cms-plugins).
-- `build` : Clears `/dist` contents and builds project into `/dist`.
-- `deploy` : Clears `/dist` contents, builds project into `/dist`, and uploads to via [`@hubspot/cms-cli`](https://www.npmjs.com/package/@hubspot/cms-cli).
+- `start` : Builds project with [webpack in development mode](https://webpack.js.org/configuration/mode/), uploads to your `defaultPortal` specified in `hubspot.config.yml` and watches for changes via [`@hubspot/webpack-cms-plugins/HubSpotAutoUploadPlugin`](https://www.npmjs.com/package/@hubspot/webpack-cms-plugins).
+- `build` : Clears `/dist` contents and builds project into `/dist` using webpack (`production` mode).
+- `deploy` : Clears `/dist` contents, builds project into `/dist` using webpack (`production` mode), and uploads to via [`@hubspot/cms-cli`](https://www.npmjs.com/package/@hubspot/cms-cli).
 - `lint` : Lints CSS, JS, and JSON files via `eslint` ([documentation](https://eslint.org/docs/user-guide/configuring)) and checks for formatting via `prettier`([documentation](https://prettier.io/docs/en/configuration.html)) in `src`.
   - For configs, see `prettier.config.js` and `eslintrc.js`.
 - `prettier:write` : Formats JS and JSON files in `src`.
