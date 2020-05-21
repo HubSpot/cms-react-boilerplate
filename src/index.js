@@ -11,7 +11,7 @@ const targetModulesData = document.querySelectorAll(
 );
 targetModulesData.forEach(({ dataset, textContent }) => {
   const root = document.getElementById(
-    `cms-react-boilerplate__App--${dataset.moduleInstance}`,
+    `App--${dataset.moduleInstance}`,
   );
   return ReactDOM.render(
     <ErrorBoundary>

@@ -9,7 +9,7 @@ const hubspotConfig = ({ portal, autoupload } = {}) => {
   return {
     target: 'web',
     entry: {
-      'cms-react-boilerplate': './src/index.js'
+      'main': './src/index.js'
     },
     output: {
       path: path.resolve(__dirname, 'dist'),

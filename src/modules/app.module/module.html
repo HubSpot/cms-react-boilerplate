@@ -1,5 +1,5 @@
-{{ require_css(get_asset_url('../../cms-react-boilerplate.css')) }}
-{{ require_js(get_asset_url('../../cms-react-boilerplate.js'), 'footer') }}
+{{ require_css(get_asset_url('../../main.css')) }}
+{{ require_js(get_asset_url('../../main.js'), 'footer') }}
 {%- set instance_id = name %}
 
 <div class="cms-react-boilerplate">
@@ -9,5 +9,5 @@
       {{ module|tojson }}
   </script>
 
-  <div id="cms-react-boilerplate__App--{{ instance_id }}"></div>
+  <div id="App--{{ instance_id }}"></div>
 </div>
