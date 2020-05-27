@@ -41,8 +41,7 @@
   "dependencies": {
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "regenerator-runtime": "^0.13.3",
-    "request": "^2.88.0"
+    "regenerator-runtime": "^0.13.3"
   },
   "browserslist": {
     "production": [
