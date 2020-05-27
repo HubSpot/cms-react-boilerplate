@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.scss';
-import logo from './images/logo.svg';
-import sprocket from './images/sprocket.svg';
+import SpinningLogo from './components/SpinningLogo';
 import Card from './components/Card';
+import reactLogo from './images/logo.svg';
+import sprocketLogo from './images/sprocket.svg';
 
 function App({ moduleData }) {
   // eslint-disable-next-line no-console
@@ -13,9 +14,13 @@ function App({ moduleData }) {
   return (
     <div className="cms-react-boilerplate__container">
       <header>
-        <div className="logo-container">
-          <img src={logo} alt="react logo" />
-          <img className="sprocket-logo" src={sprocket} alt="sprocket logo" />
+        <div className="spinning-logo__container">
+          <SpinningLogo src={reactLogo} alt="react logo" />
+          <SpinningLogo
+            src={sprocketLogo}
+            alt="sprocket logo"
+            isSprocket={true}
+          />
         </div>
         <p>
           Edit <code>src/App.js</code> and save to reload.
