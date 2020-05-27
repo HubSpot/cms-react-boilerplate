@@ -10,9 +10,7 @@ const targetModulesData = document.querySelectorAll(
   '.cms-react-boilerplate > script[type="application/json"]',
 );
 targetModulesData.forEach(({ dataset, textContent }) => {
-  const root = document.getElementById(
-    `App--${dataset.moduleInstance}`,
-  );
+  const root = document.getElementById(`App--${dataset.moduleInstance}`);
   return ReactDOM.render(
     <ErrorBoundary>
       <App
