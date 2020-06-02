@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack --watch --env.autoupload --mode production",
     "build": "rm -Rf dist && webpack --mode production",
-    "deploy": "m -Rf dist && webpack --mode production && hs upload dist cms-react-boilerplate",
+    "deploy": "rm -Rf dist && webpack --mode production && hs upload dist cms-react-boilerplate",
     "lint": "eslint src && prettier --list-different 'src/**/*.js' 'src/**/*.json'",
     "prettier:write": "prettier --write 'src/**/*.js' 'src/**/*.json'"
   },
