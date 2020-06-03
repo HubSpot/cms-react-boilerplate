@@ -13,20 +13,18 @@ function App({ moduleData }) {
   );
   return (
     <div className="cms-react-boilerplate__container">
-      <header>
-        <div className="spinning-logo__container">
-          <SpinningLogo src={reactLogo} alt="react logo" />
-          <SpinningLogo
-            src={sprocketLogo}
-            alt="sprocket logo"
-            isSprocket={true}
-          />
-        </div>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <Card initialClickCount={moduleData.initial_count} />
-      </header>
+      <div className="spinning-logo__container">
+        <SpinningLogo src={reactLogo} alt="react logo" />
+        <SpinningLogo
+          src={sprocketLogo}
+          alt="sprocket logo"
+          isSprocket={true}
+        />
+      </div>
+      <p>
+        Edit <code>src/App.js</code> and save to reload.
+      </p>
+      <Card initialClickCount={moduleData.initial_count} />
     </div>
   );
 }
