@@ -5,7 +5,7 @@ Boilerplate [React](https://reactjs.org/) project for creating apps using module
 
 For more information on local development tools, see [Local Development Tooling: Getting Started](https://designers.hubspot.com/docs/tools/local-development)
 
-### Conifguration
+### Configuration
 
 #### Set up HubSpot CMS CLI ([`@hubspot/cms-cli`](https://www.npmjs.com/package/@hubspot/cms-cli))
 - A config file named `hubspot.config.yml` will also be needed.  The config can be at the project level or higher up in the directory tree.
