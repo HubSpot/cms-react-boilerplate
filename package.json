@@ -13,9 +13,9 @@
   "author": "",
   "license": "Apache-2.0",
   "devDependencies": {
-    "@babel/core": "^7.6.2",
-    "@babel/preset-env": "^7.6.2",
-    "@babel/preset-react": "^7.0.0",
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
     "@hubspot/cli": "^3.0.2",
     "@hubspot/webpack-cms-plugins": "^3.0.1",
     "autoprefixer": "^9.7.6",
