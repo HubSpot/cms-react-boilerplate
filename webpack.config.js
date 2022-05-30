@@ -9,7 +9,7 @@ const hubspotConfig = ({ portal, autoupload } = {}) => {
   return {
     target: 'web',
     entry: {
-      'main': './src/index.js'
+      main: './src/index.js',
     },
     output: {
       path: path.resolve(__dirname, 'dist'),
@@ -34,9 +34,6 @@ const hubspotConfig = ({ portal, autoupload } = {}) => {
             { loader: 'css-loader', options: { url: false } },
             {
               loader: 'postcss-loader',
-              options: {
-                plugins: () => [autoprefixer()]
-              }
             },
             'sass-loader',
           ],
@@ -61,13 +58,15 @@ const hubspotConfig = ({ portal, autoupload } = {}) => {
       new MiniCssExtractPlugin({
         filename: '[name].css',
       }),
-      new CopyWebpackPlugin([
-        { from: 'src/images', to: 'images' },
-        {
-          from: 'src/modules',
-          to: 'modules',
-        },
-      ]),
+      new CopyWebpackPlugin({
+        patterns: [
+          { from: 'src/images', to: 'images' },
+          {
+            from: 'src/modules',
+            to: 'modules',
+          },
+        ],
+      }),
     ],
   };
 };
