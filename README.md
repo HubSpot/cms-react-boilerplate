@@ -1,5 +1,6 @@
-# cms-react-boilerplate [beta]
-Boilerplate [React](https://reactjs.org/) project for creating apps using modules on the HubSpot CMS
+# cms-react-example [beta]
+
+An example project for creating HubSpot CMS modules with [React](https://reactjs.org). Note this project is still in beta and is primarily intended as a way you could get started with React in the HubSpot CMS. For more context see ["How to use JavaScript frameworks and libraries on HubSpot"](https://developers.hubspot.com/docs/cms/guides/js-frameworks).
 
 ## Getting Started
 
