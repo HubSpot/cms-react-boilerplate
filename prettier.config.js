@@ -1,6 +1,6 @@
 module.exports = {
   bracketSpacing: true,
-  jsxBracketSameLine: false,
+  bracketSameLine: false,
   printWidth: 80,
   proseWrap: 'never',
   semi: true,
