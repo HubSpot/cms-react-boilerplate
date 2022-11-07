@@ -10,6 +10,7 @@ config.json
 /coverage
 
 # production
+/build
 /dist
 
 # misc
@@ -19,12 +20,9 @@ config.json
 .env.test.local
 .env.production.local
 
-# vscode settings
-/.vscode/settings.json
-
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# HubSpot config file
 hubspot.config.yml
-hubspot.config.yaml

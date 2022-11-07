@@ -1,48 +1,48 @@
-const CopyWebpackPlugin = require('copy-webpack-plugin');
-const HubSpotAutoUploadPlugin = require('@hubspot/webpack-cms-plugins/HubSpotAutoUploadPlugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const path = require('path');
-const autoprefixer = require('autoprefixer');
-
+const CopyWebpackPlugin = require("copy-webpack-plugin");
+const HubSpotAutoUploadPlugin = require("@hubspot/webpack-cms-plugins/HubSpotAutoUploadPlugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const path = require("path");
+const autoprefixer = require("autoprefixer");
 
 const hubspotConfig = ({ portal, autoupload } = {}) => {
   return {
-    target: 'web',
+    target: "web",
     entry: {
-      main: './src/index.js',
+      main: "./src/index.tsx",
     },
     output: {
-      path: path.resolve(__dirname, 'dist'),
-      filename: '[name].js',
+      path: path.resolve(__dirname, "dist"),
+      filename: "[name].js",
     },
     optimization: {
       minimize: false,
     },
+    resolve: {
+      extensions: [".ts", ".json", ".js", ".tsx"], // Add your extensions here.
+    },
     module: {
+      strictExportPresence: true,
       rules: [
+        { test: /\.css$/, use: ["style-loader", "css-loader"] },
         {
-          test: /\.js$/,
+          test: /\.tsx?$/,
+          loader: "ts-loader",
           exclude: /node_modules/,
-          use: {
-            loader: 'babel-loader',
-          },
         },
-        {
-          test: /\.s[ac]ss$/i,
-          use: [
-            MiniCssExtractPlugin.loader,
-            { loader: 'css-loader', options: { url: false } },
-            {
-              loader: 'postcss-loader',
-            },
-            'sass-loader',
-          ],
-        },
+        // {
+        //   test: /\.s[ac]ss$/i,
+        //   use: [
+        //     MiniCssExtractPlugin.loader,
+        //     { loader: "css-loader", options: { url: false } },
+        //     "sass-loader",
+        //   ],
+        // },
+
         {
           test: /\.(svg)$/,
           use: [
             {
-              loader: 'url-loader',
+              loader: "url-loader",
             },
           ],
         },
@@ -52,18 +52,17 @@ const hubspotConfig = ({ portal, autoupload } = {}) => {
       new HubSpotAutoUploadPlugin({
         portal,
         autoupload,
-        src: 'dist',
-        dest: 'cms-react-boilerplate',
+        src: "dist",
+        dest: "cms-react-boilerplate",
       }),
       new MiniCssExtractPlugin({
-        filename: '[name].css',
+        filename: "[name].css",
       }),
       new CopyWebpackPlugin({
         patterns: [
-          { from: 'src/images', to: 'images' },
           {
-            from: 'src/modules',
-            to: 'modules',
+            from: "src/modules",
+            to: "modules",
           },
         ],
       }),

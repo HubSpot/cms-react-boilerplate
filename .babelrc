@@ -7,6 +7,8 @@
         "corejs": 3.6
       }
     ],
-    "@babel/preset-react"
-  ]
+    "@babel/preset-react",
+    "@babel/preset-typescript",
+  ],
+  
 }
