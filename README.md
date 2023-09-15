@@ -1,5 +1,12 @@
 # cms-react-boilerplate [beta]
-Boilerplate [React](https://reactjs.org/) project for creating apps using modules on the HubSpot CMS
+
+Boilerplate [React](https://reactjs.org/) project for creating apps using modules on the HubSpot CMS.
+
+## *NOTE:*
+
+The `cms-react-boilerplate` legacy repository is a starting place for building and running a SPA (single page application) style React App on a HubSpot page. The React build itself is not directly connected to HubSpot.
+
+Recently HubSpot has released "CMS JS Building Blocks" for general availability. Read documentation and [views examples here](https://github.com/HubSpot/cms-js-building-block-examples). The "building blocks" feature directly integrates React on the server and the client with HubSpot and enables building HubSpot modules in React. Further, it builds on the [HubSpot Developer Projects](https://developers.hubspot.com/docs/platform/create-a-project) system which provides CI/CD build and deploy functionality.
 
 ## Getting Started
 
